@@ -1,0 +1,1610 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.Form..Create(BaseForm)
+Gui.Form..Size(19605,10695)
+Gui.Form..MinX(0)
+Gui.Form..MinY(0)
+Gui.Form..Position(0,0)
+Gui.Form..BackColor(-2147483633)
+Gui.Form..MousePointer(0)
+Gui.Form..Event(UnLoad,Form_UnLoad)
+Gui.Form..Caption("Bom Upload Tool")
+Gui.Form..AlwaysOnTop(False)
+Gui.Form..FontName("Tahoma")
+Gui.Form..FontSize(8.25)
+Gui.Form..ControlBox(True)
+Gui.Form..MaxButton(True)
+Gui.Form..MinButton(True)
+Gui.Form..Moveable(True)
+Gui.Form..Sizeable(True)
+Gui.Form..ShowInTaskBar(True)
+Gui.Form..TitleBar(True)
+Gui.Form.frmUpload.Create(Frame)
+Gui.Form.frmUpload.Size(6105,735)
+Gui.Form.frmUpload.Position(90,90)
+Gui.Form.frmUpload.Caption("Upload File")
+Gui.Form.frmUpload.Enabled(True)
+Gui.Form.frmUpload.Visible(True)
+Gui.Form.frmUpload.Zorder(0)
+Gui.Form.frmUpload.FontName("Tahoma")
+Gui.Form.frmUpload.FontSize(8.25)
+Gui.Form.frmUpload.BorderStyle(3)
+Gui.Form.txt_Upload.Create(TextBox,"",True,4410,300,0,105,330,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_Upload.Parent("frmUpload")
+Gui.Form.cmd_brwUpload.Create(Button)
+Gui.Form.cmd_brwUpload.Size(465,375)
+Gui.Form.cmd_brwUpload.Position(4575,300)
+Gui.Form.cmd_brwUpload.Parent("frmUpload")
+Gui.Form.cmd_brwUpload.Caption("^")
+Gui.Form.cmd_brwUpload.Event(Click,cmd_brwUpload_Click)
+Gui.Form.cmd_brwUpload.Enabled(True)
+Gui.Form.cmd_brwUpload.Visible(True)
+Gui.Form.cmd_brwUpload.Zorder(0)
+Gui.Form.cmd_brwUpload.FontName("Tahoma")
+Gui.Form.cmd_brwUpload.FontSize(8.25)
+Gui.Form.cmd_Upload.Create(Button)
+Gui.Form.cmd_Upload.Size(855,375)
+Gui.Form.cmd_Upload.Position(5145,300)
+Gui.Form.cmd_Upload.Parent("frmUpload")
+Gui.Form.cmd_Upload.Caption("Upload")
+Gui.Form.cmd_Upload.Event(Click,cmd_Upload_Click)
+Gui.Form.cmd_Upload.Enabled(True)
+Gui.Form.cmd_Upload.Visible(True)
+Gui.Form.cmd_Upload.Zorder(0)
+Gui.Form.cmd_Upload.FontName("Tahoma")
+Gui.Form.cmd_Upload.FontSize(8.25)
+Gui.Form.frame1.Create(Frame)
+Gui.Form.frame1.Size(19440,7860)
+Gui.Form.frame1.Position(90,2190)
+Gui.Form.frame1.Anchor(15)
+Gui.Form.frame1.Enabled(True)
+Gui.Form.frame1.Visible(True)
+Gui.Form.frame1.Zorder(0)
+Gui.Form.frame1.Caption("")
+Gui.Form.frame1.FontName("Tahoma")
+Gui.Form.frame1.FontSize(8.25)
+Gui.Form.GsGcBOM.Create(GsGridControl)
+Gui.Form.GsGcBOM.Size(19245,7680)
+Gui.Form.GsGcBOM.Position(105,90)
+Gui.Form.GsGcBOM.Parent("frame1")
+Gui.Form.GsGcBOM.Anchor(15)
+Gui.Form.GsGcBOM.Enabled(True)
+Gui.Form.GsGcBOM.Visible(True)
+Gui.Form.GsGcBOM.Zorder(0)
+Gui.Form.frmControl.Create(Frame)
+Gui.Form.frmControl.Size(5280,735)
+Gui.Form.frmControl.Position(6285,90)
+Gui.Form.frmControl.Caption("Controls")
+Gui.Form.frmControl.Enabled(True)
+Gui.Form.frmControl.Visible(True)
+Gui.Form.frmControl.Zorder(0)
+Gui.Form.frmControl.FontName("Tahoma")
+Gui.Form.frmControl.FontSize(8.25)
+Gui.Form.frmControl.BorderStyle(3)
+Gui.Form.cmdBOM_Upload.Create(Button)
+Gui.Form.cmdBOM_Upload.Size(1245,375)
+Gui.Form.cmdBOM_Upload.Position(3945,300)
+Gui.Form.cmdBOM_Upload.Parent("frmControl")
+Gui.Form.cmdBOM_Upload.Caption("BOM Upload")
+Gui.Form.cmdBOM_Upload.Event(Click,cmdBOM_Upload_Click)
+Gui.Form.cmdBOM_Upload.Enabled(False)
+Gui.Form.cmdBOM_Upload.Visible(True)
+Gui.Form.cmdBOM_Upload.Zorder(0)
+Gui.Form.cmdBOM_Upload.FontName("Tahoma")
+Gui.Form.cmdBOM_Upload.FontSize(8.25)
+Gui.Form.cmdCreatePN.Create(Button)
+Gui.Form.cmdCreatePN.Size(1785,375)
+Gui.Form.cmdCreatePN.Position(2055,300)
+Gui.Form.cmdCreatePN.Parent("frmControl")
+Gui.Form.cmdCreatePN.Caption("Create Part Numbers")
+Gui.Form.cmdCreatePN.Event(Click,cmdCreatePN_Click)
+Gui.Form.cmdCreatePN.Enabled(True)
+Gui.Form.cmdCreatePN.Visible(True)
+Gui.Form.cmdCreatePN.Zorder(0)
+Gui.Form.cmdCreatePN.FontName("Tahoma")
+Gui.Form.cmdCreatePN.FontSize(8.25)
+Gui.Form.cmd_CheckRD.Create(Button)
+Gui.Form.cmd_CheckRD.Size(1890,375)
+Gui.Form.cmd_CheckRD.Position(75,300)
+Gui.Form.cmd_CheckRD.Parent("frmControl")
+Gui.Form.cmd_CheckRD.Caption("Check Ref Designators")
+Gui.Form.cmd_CheckRD.Event(Click,cmd_CheckRD_Click)
+Gui.Form.cmd_CheckRD.Enabled(True)
+Gui.Form.cmd_CheckRD.Visible(True)
+Gui.Form.cmd_CheckRD.Zorder(0)
+Gui.Form.cmd_CheckRD.FontName("Tahoma")
+Gui.Form.cmd_CheckRD.FontSize(8.25)
+Gui.Form.frmBom.Create(Frame)
+Gui.Form.frmBom.Size(16785,1170)
+Gui.Form.frmBom.Position(120,900)
+Gui.Form.frmBom.Caption("Bom Information")
+Gui.Form.frmBom.Enabled(True)
+Gui.Form.frmBom.Visible(True)
+Gui.Form.frmBom.Zorder(0)
+Gui.Form.frmBom.FontName("Tahoma")
+Gui.Form.frmBom.FontSize(8.25)
+Gui.Form.frmBom.BorderStyle(2)
+Gui.Form.txt_Description.Create(TextBox,"",True,3135,300,0,2970,705,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_Description.Parent("frmBom")
+Gui.Form.txt_Description.Locked(True)
+Gui.Form.cmdMFGbrw.Create(Button)
+Gui.Form.cmdMFGbrw.Enabled(True)
+Gui.Form.cmdMFGbrw.Visible(True)
+Gui.Form.cmdMFGbrw.Zorder(0)
+Gui.Form.cmdMFGbrw.Size(390,345)
+Gui.Form.cmdMFGbrw.Position(9330,660)
+Gui.Form.cmdMFGbrw.Caption("^")
+Gui.Form.cmdMFGbrw.FontName("Tahoma")
+Gui.Form.cmdMFGbrw.FontSize(8.25)
+Gui.Form.cmdMFGbrw.Parent("frmBom")
+Gui.Form.cmdMFGbrw.Event(Click,cmdMFGbrw_Click)
+Gui.Form.txt_PartNumber.Create(TextBox,"",True,1995,300,0,75,720,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_PartNumber.Parent("frmBom")
+Gui.Form.txt_PartNumber.Locked(True)
+Gui.Form.lbl6.Create(Label,"Part Class",True,735,210,0,6240,450,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl6.Parent("frmBom")
+Gui.Form.lbl6.BorderStyle(0)
+Gui.Form.txt_MfgPart.Create(TextBox,"",True,1515,300,0,9795,690,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_MfgPart.Parent("frmBom")
+Gui.Form.txt_MfgPart.Locked(True)
+Gui.Form.lbl10.Create(Label,"Customer Name",True,1140,210,0,14730,405,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl10.BorderStyle(0)
+Gui.Form.lbl10.Parent("frmBom")
+Gui.Form.txt_CustPart.Create(TextBox,"",True,2310,300,0,11370,690,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_CustPart.Parent("frmBom")
+Gui.Form.txt_CustPart.Locked(True)
+Gui.Form.lbl8.Create(Label,"Rev",True,285,210,0,2310,465,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl8.Parent("frmBom")
+Gui.Form.lbl8.BorderStyle(0)
+Gui.Form.lbl1.Create(Label,"Part Name",True,735,210,0,105,480,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl1.Parent("frmBom")
+Gui.Form.lbl1.BorderStyle(0)
+Gui.Form.txt_PartClass.Create(TextBox,"",True,750,300,0,6225,690,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_PartClass.Parent("frmBom")
+Gui.Form.txt_PartClass.Locked(True)
+Gui.Form.txt_Mfg.Create(TextBox,"",True,1380,300,0,7860,690,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_Mfg.Parent("frmBom")
+Gui.Form.txt_Mfg.Locked(True)
+Gui.Form.txt_CustName.Create(TextBox,"",True,1335,300,0,14715,675,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_CustName.Locked(True)
+Gui.Form.txt_CustName.Parent("frmBom")
+Gui.Form.cmdCustBrw.Create(Button)
+Gui.Form.cmdCustBrw.Enabled(True)
+Gui.Form.cmdCustBrw.Visible(True)
+Gui.Form.cmdCustBrw.Zorder(0)
+Gui.Form.cmdCustBrw.Size(390,345)
+Gui.Form.cmdCustBrw.Position(16110,645)
+Gui.Form.cmdCustBrw.Caption("^")
+Gui.Form.cmdCustBrw.FontName("Tahoma")
+Gui.Form.cmdCustBrw.FontSize(8.25)
+Gui.Form.cmdCustBrw.Parent("frmBom")
+Gui.Form.cmdCustBrw.Event(Click,cmdCustBrw_Click)
+Gui.Form.txt_PartType.Create(TextBox,"",True,750,300,0,7035,690,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_PartType.Parent("frmBom")
+Gui.Form.txt_PartType.Locked(True)
+Gui.Form.lbl2.Create(Label,"Description",True,810,210,0,2985,465,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl2.Parent("frmBom")
+Gui.Form.lbl2.BorderStyle(0)
+Gui.Form.lbl3.Create(Label,"Customer Part Number",True,1635,210,0,11385,450,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl3.Parent("frmBom")
+Gui.Form.lbl3.BorderStyle(0)
+Gui.Form.lbl4.Create(Label,"Manufacturer",True,990,210,0,7890,450,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl4.Parent("frmBom")
+Gui.Form.lbl4.BorderStyle(0)
+Gui.Form.lbl5.Create(Label,"Mfg Part Number",True,1215,210,0,9825,450,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl5.Parent("frmBom")
+Gui.Form.lbl5.BorderStyle(0)
+Gui.Form.lbl7.Create(Label,"Part Type",True,690,210,0,7065,450,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl7.Parent("frmBom")
+Gui.Form.lbl7.BorderStyle(0)
+Gui.Form.lbl9.Create(Label,"Customer",True,705,210,0,13830,420,True,0,"Arial",8,-2147483633,0,0)
+Gui.Form.lbl9.BorderStyle(0)
+Gui.Form.lbl9.Parent("frmBom")
+Gui.Form.txt_PartRev.Create(TextBox,"",True,750,300,0,2145,705,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_PartRev.Parent("frmBom")
+Gui.Form.txt_PartRev.Locked(True)
+Gui.Form.txt_Cust.Create(TextBox,"",True,870,300,0,13785,675,True,0,"Arial",8,-2147483643,1)
+Gui.Form.txt_Cust.Locked(True)
+Gui.Form.txt_Cust.Parent("frmBom")
+Gui.Form.frmDuplicates.Create(Frame)
+Gui.Form.frmDuplicates.Size(2070,2010)
+Gui.Form.frmDuplicates.Position(17430,75)
+Gui.Form.frmDuplicates.Caption("Duplicates")
+Gui.Form.frmDuplicates.Enabled(True)
+Gui.Form.frmDuplicates.Visible(True)
+Gui.Form.frmDuplicates.Zorder(0)
+Gui.Form.frmDuplicates.FontName("Tahoma")
+Gui.Form.frmDuplicates.FontSize(8.25)
+Gui.Form.frmDuplicates.Anchor(9)
+Gui.Form.GsGcDuplicate.Create(GsGridControl)
+Gui.Form.GsGcDuplicate.Size(1905,1815)
+Gui.Form.GsGcDuplicate.Position(90,90)
+Gui.Form.GsGcDuplicate.Parent("frmDuplicates")
+Gui.Form.GsGcDuplicate.Enabled(True)
+Gui.Form.GsGcDuplicate.Visible(True)
+Gui.Form.GsGcDuplicate.Zorder(0)
+Gui.Form.GsGcDuplicate.Anchor(9)
+Gui.Form.txt1.Create(TextBox,"Line Duplicate",True,1710,270,0,15210,45,True,2,"Arial",8,42495,0)
+Gui.Form.txt1.FontStyle(True,False,False,False,False)
+Gui.Form.txt2.Create(TextBox,"Doc Duplicate",True,1710,270,0,15210,315,True,2,"Arial",8,255,0)
+Gui.Form.progressBar1.Create(ProgressBar)
+Gui.Form.progressBar1.Size(1725,255)
+Gui.Form.progressBar1.Position(15210,615)
+Gui.Form.progressBar1.Visible(False)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.External.Include.Library("GCG_5787_Part_Generator_new.lib")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Author: Alejandro Anazco V.
+'12/4/2019
+'Programmed for ARC-Tronics
+'Purpose: Import BOM
+f.Intrinsic.Control.Try
+	f.Intrinsic.Control.CallSub(createDisplayDT)
+	f.Intrinsic.Control.CallSub(loadGridProperties)
+	gui.Form..Show
+'Try something
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.ErrorMsg.Start
+v.Local.sError.Declare
+gui.Form..Enabled(True)
+
+'Closes ODBC connection, default to connection : "con"
+f.Intrinsic.Control.If(v.ODBC!con.State, =, 1)
+	f.ODBC.Connection!con.Close
+f.Intrinsic.Control.EndIf
+
+'Generic Error message.
+f.Intrinsic.String.Build("Project GCG_5786_BOM_Import_New.g2u {0}{0}Subroutine: {1}{0}Error: {2} with Description: {3}", v.Ambient.NewLine, v.Args.CurrentSub, v.Ambient.ErrorNumber, v.Ambient.ErrorDescription, v.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+Program.Sub.ErrorMsg.End
+
+Program.Sub.createDisplayDT.Start
+f.Intrinsic.Control.Try
+	'Create Display DT.
+	f.Data.DataTable.Create("displayDT", true)
+	f.Data.DataTable.AddColumn("displayDT", "itemNo", "String")
+	f.Data.DataTable.AddColumn("displayDT", "qty", "String")
+	f.Data.DataTable.AddColumn("displayDT", "description", "String")
+	f.Data.DataTable.AddColumn("displayDT", "invUM", "String")
+	f.Data.DataTable.AddColumn("displayDT", "partClass", "String")
+	f.Data.DataTable.AddColumn("displayDT", "partType", "String")
+	f.Data.DataTable.AddColumn("displayDT", "warehouse", "String")
+	f.Data.DataTable.AddColumn("displayDT", "gssPartNo", "String")
+	f.Data.DataTable.AddColumn("displayDT", "gssRev", "String")
+	f.Data.DataTable.AddColumn("displayDT", "workCenter", "String")
+	f.Data.DataTable.AddColumn("displayDT", "refDesg", "String")
+	f.Data.DataTable.AddColumn("displayDT", "unitPrice", "String")
+	f.Data.DataTable.AddColumn("displayDT", "nameCheck", "Long", 0)
+	f.Data.DataTable.AddColumn("displayDT", "refDesgCheck", "Long", 0)
+	f.Data.DataTable.AddColumn("displayDT", "allRefDesgCheck", "Long", 0)
+	f.Data.Datatable.AddColumn("displayDT", "mfgDisplayCheck", "Long", 0)
+	
+	f.Data.DataView.Create("displayDT", "displayDV", 22)
+	gui.Form.GsGcBOM.AddGridviewFromDataview("displayGV", "displayDT", "displayDV")
+	gui.Form.GsGcBOM.MainView("displayGV")
+	
+'	f.Data.DataTable.Create("refDisplayDT", true)
+'	f.Data.DataTable.AddColumn("refDisplayDT", "itemNo", "String")
+'	f.Data.DataTable.AddColumn("refDisplayDT", "descript", "String")
+'	f.Data.DataTable.AddColumn("refDisplayDT", "refDesg", "String")
+'	
+'	f.Data.DataView.Create("refDisplayDT", "refDisplayDV", 22)
+'	gui.Form.GsGcAVL.AddGridviewFromDataview("refDisplayGV", "refDisplayDT", "refDisplayDV")
+'	gui.Form.GsGcAVL.MainView("refDisplayGV")
+	
+	f.Data.DataTable.Create("duplicateDT", True)
+	f.Data.DataTable.AddColumn("duplicateDT", "REF_DESIGNATOR", "String")
+	
+	f.Data.DataView.Create("duplicateDT", "duplicateDV", 22)
+	gui.Form.GsGcDuplicate.AddGridviewFromDataview("duplicateGV", "duplicateDT", "duplicateDV")
+	gui.Form.GsGcDuplicate.MainView("duplicateGV")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.createDisplayDT.End
+
+Program.Sub.loadGridProperties.Start
+v.Local.iCnt.Declare
+v.Local.sFields.Declare
+f.Intrinsic.Control.Try
+	f.Intrinsic.String.Split(v.DataTable.displayDT.FieldNames, "*!*", v.Local.sFields)
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.Local.sFields.UBound, 1)
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderFontBold", True)
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "Visible", True)
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "ReadOnly", True)
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "AllowEdit", False)
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderHAlignment", "Near")
+		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "CellHAlignment", "Near")
+'		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderBackColor", v.Color.GSS)
+'		gui.Form.GsGcBOM.SetColumnProperty("displayGV", v.Local.sFields(v.Local.iCnt), "HeaderForeColor", v.Color.White)
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	gui.Form.GsGcBOM.AddStyleFormatCondition("displayGV", "refDesgCheck", "myTag1", "EQUAL", 1)
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "refDesgCheck", "myTag1", "ApplyToRow", True) 
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "refDesgCheck", "myTag1", "BackColor", "Orange") 
+	
+	gui.Form.GsGcBOM.AddStyleFormatCondition("displayGV", "allRefDesgCheck", "myTag2", "EQUAL", 1)
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "allRefDesgCheck", "myTag2", "ApplyToRow", True) 
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "allRefDesgCheck", "myTag2", "BackColor", "Red") 
+	
+	gui.Form.GsGcBOM.AddStyleFormatCondition("displayGV", "mfgDisplayCheck", "myTag4", "EQUAL", 1)
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "mfgDisplayCheck", "myTag4", "ApplyToRow", True) 
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("displayGV", "mfgDisplayCheck", "myTag4", "BackColor", v.Color.LtGray) 	
+	
+	gui.Form.GsGcBOM.SetGridviewProperty("displayGV", "OptionsViewColumnAutoWidth", False)
+	'gui.Form.GsGcBOM.SetColumnProperty("displayGV", "Default", "AllowEdit", True)
+	'gui.Form.GsGcBOM.SetColumnProperty("displayGV", "Default", "HeaderHAlignment", "Center")
+	'gui.Form.GsGcBOM.SetColumnProperty("displayGV", "Default", "CellHAlignment", "Center")
+	
+	'Caption
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "ItemNo", "Caption", "Item No")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "qty", "Caption", "Qty")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "description", "Caption", "Description")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "invUM", "Caption", "UM")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "partClass", "Caption", "Part Class")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "partType", "Caption", "Part Type")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "warehouse", "Caption", "Warehouse")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "gsspartno", "Caption", "GSS Part")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "gssrev", "Caption", "GSS Rev")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "workCenter", "Caption", "Workcenter")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "refDesg", "Caption", "Ref Designators")
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "unitPrice", "Caption", "Price")
+	'Visible
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "nameCheck", "Visible", False)
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "refDesgCheck", "Visible", False)
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "allRefDesgCheck", "Visible", False)
+	gui.Form.GsGcBOM.SetColumnProperty("displayGV", "mfgDisplayCheck", "Visible", False)
+	
+	f.Intrinsic.String.Split(v.DataTable.duplicateDT.FieldNames, "*!*", v.Local.sFields)
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.Local.sFields.UBound, 1)
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "HeaderFontBold", True)
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "Visible", True)
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "ReadOnly", True)
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "AllowEdit", False)
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "HeaderHAlignment", "Near")
+		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "CellHAlignment", "Near")
+'		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "HeaderBackColor", v.Color.GSS)
+'		gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", v.Local.sFields(v.Local.iCnt), "HeaderForeColor", v.Color.White)
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	gui.Form.GsGcDuplicate.SetColumnProperty("duplicateGV", "REF_DESIGNATOR", "Caption", "Duplicates")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.loadGridProperties.End
+
+Program.Sub.cmd_brwUpload_Click.Start
+v.Local.sFilePath.Declare
+f.Intrinsic.Control.Try
+	'Show File Dialog.
+	f.Intrinsic.UI.ShowOpenFileDialog("", "CSV|*.csv|XLXS|*.xlsx|XLS|*.xls", v.Local.sFilePath)
+	f.Intrinsic.Control.If(v.Local.sFilePath.Trim, <>, "***CANCEL***")
+		'Set the file location to Textbox.
+		gui.Form.txt_Upload.Text(v.Local.sFilePath)
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd_brwUpload_Click.End
+
+Program.Sub.cmd_Upload_Click.Start
+v.Local.sFilePath.Declare
+v.Local.bExists.Declare
+f.Intrinsic.Control.Try
+	'Disable Screen.
+	gui.Form..Enabled(False)
+	'Check if the txt field has file
+	v.Local.sFilePath.Set(v.Screen.Form!txt_Upload.Text)
+	f.Intrinsic.Control.If(v.Local.sFilePath.Trim, =, "")
+		f.Intrinsic.UI.Msgbox("Please input a file path.")
+		'Enable Screen.
+		gui.Form..Enabled(True)
+		'Exit
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'Check if file exists.
+	f.Intrinsic.File.Exists(v.Local.sFilePath, v.Local.bExists)
+	f.Intrinsic.Control.If(v.Local.bExists.Not)
+		f.Intrinsic.UI.Msgbox("Please input a valid file path. File can not be found.")
+		'Enable Screen.
+		gui.Form..Enabled(True)
+		'Exit
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'Call Lib subroutine.
+	f.Intrinsic.Control.CallSub("libBomUpload", passedEnanblePB, True, passedPBname, "progressBar1", passedFormName, "Form", passedFilePath, v.Screen.Form!txt_Upload.Text)
+	
+	'Get Bom Parent Parts.
+	gui.Form.txt_PartNumber.Text(v.DataTable.libBomParent(0).gssPartNo!FieldValTrim)
+	gui.Form.txt_Description.Text(v.DataTable.libBomParent(0).description!FieldValTrim)
+	gui.Form.txt_PartClass.Text(v.DataTable.libBomParent(0).partClass!FieldValTrim)
+	gui.Form.txt_PartType.Text(v.DataTable.libBomParent(0).partType!FieldValTrim)
+	gui.Form.txt_Mfg.Text(v.DataTable.libBomParent(0).mfg!FieldValTrim)
+	gui.Form.txt_MfgPart.Text(v.DataTable.libBomParent(0).mpn!FieldValTrim)
+	gui.Form.txt_CustPart.Text(v.DataTable.libBomParent(0).custPartNum!FieldValTrim)
+	
+	f.Intrinsic.Control.CallSub("formatUpload")
+	gui.Form.progressBar1.Value(0)
+	
+	'Enable Screen.
+	gui.Form..Enabled(True)
+f.Intrinsic.Control.Catch
+	'Enable Screen.
+	gui.Form..Enabled(True)
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd_Upload_Click.End
+
+Program.Sub.formatUpload.Start
+v.Local.iCnt.Declare
+f.Intrinsic.Control.Try
+	gui.Form.progressBar1.Value(0)
+	gui.Form.progressBar1.Visible(True)
+	'Check 
+	f.Intrinsic.Control.If(v.DataTable.libBomUploadDT.RowCount, =, 0)
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.If(v.DataTable.parentBomDT.Exists)
+		f.Data.DataTable.Close("parentBomDT")
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.If(v.DataTable.itemDT.Exists)
+		f.Data.DataTable.Close("itemDT")
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.If(v.DataTable.refDesgDT.Exists)
+		f.Data.DataTable.Close("refDesgDT")
+	f.Intrinsic.Control.EndIf
+	gui.Form.progressBar1.Value(60)
+	'Delete first row (Titles)
+	f.Data.DataTable.DeleteRow("libBomUploadDT", 0) 'Deletes title row
+	'Create Dataview
+	f.Data.DataTable.AcceptChanges("libBomUploadDT")
+	f.Data.DataView.Create("libBomUploadDT", "uploadDV", 22)
+	'Get Distinct for Parent Table
+	f.Data.DataView.ToDataTableDistinct("libBomUploadDT", "uploadDV", "parentBomDT", "itemNo*!*qty*!*description*!*partClass*!*partType*!*gssPartNo*!*gssRev*!*workCenter*!*refDesg", true)
+	f.Data.DataView.ToDataTableDistinct("libBomUploadDT", "uploadDV", "itemDT", "itemNo", true)
+	f.Data.DataView.ToDataTableDistinct("libBomUploadDT", "uploadDV", "refDesgDT", "itemNo*!*refDesg", true)
+	gui.Form.progressBar1.Value(65)
+	'Check if there are a missmatch in the Item No.
+	f.Intrinsic.Control.If(v.DataTable.parentBomDT.RowCount, <>, v.DataTable.itemDT.RowCount)
+		f.Intrinsic.UI.Msgbox("There's an error in the Item No or Reference Designator, Please check document.")
+		
+		f.Data.DataTable.Close("parentBomDT")
+		f.Data.DataTable.Close("itemDT")
+		f.Data.DataView.Close("libBomUploadDT", "uploadDV")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	gui.Form.progressBar1.Value(70)
+	f.Intrinsic.Control.If(v.DataTable.parentBomDT.RowCount, <>, v.DataTable.refDesgDT.RowCount)
+		f.Intrinsic.UI.Msgbox("There's an error in the Reference Designator, Please check document.")
+		f.Data.DataView.Close("libBomUploadDT", "uploadDV")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	gui.Form.progressBar1.Value(75)
+	f.Data.DataTable.Close("itemDT")
+	f.Data.DataTable.Close("refDesgDT")
+	
+	
+	'Get Lines
+	f.Data.DataView.ToDataTable("libBomUploadDT", "uploadDV", "displayDT$lineBomDT", true)
+	
+	f.Data.DataTable.DeleteRow("parentBomDT", 0) 'Deletes Bom Parent Row.
+	f.Data.DataTable.DeleteRow("displayDT$lineBomDT", 0) 'Deletes Bom Parent Row.
+	f.Data.DataTable.AddColumn("displayDT$lineBomDT", "select2Upload", "boolean", False)
+	f.Data.DataTable.AddColumn("displayDT$lineBomDT", "AMLNEW", "String")
+	f.Data.Datatable.AddColumn("displayDT$lineBomDT", "mfgChildCheck", "Long")
+	
+	f.Data.DataTable.Merge("parentBomDT", "displayDT", false, 2)
+	
+	f.Data.DataTable.AddRelation("displayDT", "ITEMNO", "displayDT$lineBomDT", "ITEMNO")
+	gui.Form.progressBar1.Value(80)
+
+	f.Intrinsic.Control.CallSub(checkPN)
+	f.Intrinsic.Control.CallSub(checkAML)
+	
+	gui.Form.GsGcBOM.SuspendLayout
+	gui.Form.GsGcBOM.ResumeLayout
+		
+	f.Data.DataView.Create("displayDT$lineBomDT", "lineBomDV")
+	gui.Form.GsGcBOM.AddGridviewFromDataview("lineBomGV", "displayDT", "lineBomDV")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "select2Upload", "VisibleIndex", 0)
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "AMLNEW", "VisibleIndex", 1)
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "select2Upload", "ReadOnly", False)
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "select2Upload", "AllowEdit", True)
+	
+	'Caption
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "select2Upload", "Caption", "Upload")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "AMLNEW", "Caption", "New AML")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "itemNo", "Caption", "Item No")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "partSource", "Caption", "Source")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "partClass", "Caption", "Part Class")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "partType", "Caption", "Part Type")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "workcenter", "Caption", "Workcenter")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "gsspartNo", "Caption", "GSS Part No")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "gssRev", "Caption", "GSS Rev")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "CustPartNo", "Caption", "Cust Part No")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "CustRev", "Caption", "Cust Rev")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "Description", "Caption", "Description")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "Package", "Caption", "Package")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "pinCount", "Caption", "Pin Count")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "qty", "Caption", "Qty")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "invUM", "Caption", "UM")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "i2pConversion", "Caption", "Conversion")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "purchUM", "Caption", "Purch UM")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "refDesg", "Caption", "Reference Designator")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "MFG", "Caption", "MFG")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "MPN", "Caption", "MPN")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "defaultBin", "Caption", "Bin")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "stdCost", "Caption", "Std Cost")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "minOrder", "Caption", "Minimun Order")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "multOrder", "Caption", "Multiple Order")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "leadTimes", "Caption", "Lead Time")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "Sort_code", "Caption", "Buyer")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "NCNR", "Caption", "NCNR")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "partPackaging", "Caption", "Part Packaging")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "run_scrap", "Caption", "Run Scrap")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "Insp_Req", "Caption", "Inspection Req")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "Cert_req", "Caption", "Certification Req")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "rohsVer", "Caption", "ROHS Version")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "rohsExceptionApplies", "Caption", "ROHS Exception Applies")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "rohsExceptions", "Caption", "ROHS Exceptions")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "reachContainsSVHC", "Caption", "Reach Contains SVHC")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "reachContainedCAS", "Caption", "Reach Contained CAS")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "reachSVHClimitExceeded", "Caption", "Reach SVHC Limit Exceeded")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "reachSVHClimitExceededCAS", "Caption", "Reach SVHC Limit Exceeded CAS")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "reachListVer", "Caption", "Reach List Version")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "cal65status", "Caption", "CA 65 Status")
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "caProp65CAS", "Caption", "CA Prop 65 CAS")
+	'Visible
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "mfgChildCheck", "Visible", False)
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "mfgCrossPN", "Visible", False)
+	gui.Form.GsGcBOM.SetColumnProperty("lineBomGV", "mpnMfg", "Visible", False)
+	
+	gui.Form.GsGcBOM.SetGridviewProperty("lineBomGV", "OptionsViewColumnAutoWidth", false)
+	f.Intrinsic.Control.CallSub(checkMfg)
+	
+	gui.Form.GsGcBOM.AddStyleFormatCondition("lineBomGV", "AMLNEW", "myTag3", "EQUAL", "NEW")
+	'gui.Form.GsGcBOM.SetStyleFormatConditionProperty("lineBomGV", "AMLNEW", "myTag3", "ApplyToRow", True) 
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("lineBomGV", "AMLNEW", "myTag3", "BackColor", v.Color.LtMagenta) 
+	
+	gui.Form.GsGcBOM.AddStyleFormatCondition("lineBomGV", "mfgChildCheck", "myTag5", "EQUAL", 1)
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("lineBomGV", "mfgChildCheck", "myTag5", "ApplyToRow", True) 
+	gui.Form.GsGcBOM.SetStyleFormatConditionProperty("lineBomGV", "mfgChildCheck", "myTag5", "BackColor", v.Color.LtGray) 
+
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		Gui.Form.GsGcBOM.ExpandMasterRow("displayGV", v.Local.iCnt)
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	
+	
+	gui.Form.progressBar1.Value(100)
+	gui.Form.progressBar1.Visible(False)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.formatUpload.End
+
+Program.Sub.checkPN.Start
+v.Local.iCnt.Declare
+v.Local.sTemp.Declare
+v.Local.sFilter.Declare
+v.Local.sNameArray.Declare
+v.Local.sCurrentItem.Declare
+v.Local.sMPN.Declare
+v.Local.sMFG.Declare
+v.Local.sBomName.Declare
+v.Local.sSQL.Declare
+v.Local.iCheckName.Declare
+f.Intrinsic.Control.Try
+	'Create Dictionaries.
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Data.Dictionary.CreateFromSQL("mfgPN_Dict", "con", "Select RTRIM(MFG_PART) + RTRIM(MFG_NAME), PART from INV_CROSS_REF where isnull(mfg_part, '') <> ''")
+	f.ODBC.Connection!con.Close
+	
+	'Create Dictionary
+	f.Data.Dictionary.Create("itemPartNo")
+	
+	'Add column to fill part number from dictionary and fill from dictionary
+	f.Data.DataTable.AddColumn("displayDT$lineBomDT", "mfgCrossPN", "String")
+	f.Data.DataTable.AddExpressionColumn("displayDT$lineBomDT", "mpnMfg", "String", "Trim(mpn) + Trim(mfg)")
+	f.Data.Dictionary.SetDefaultReturn("mfgPN_Dict", "")
+	f.Data.DataTable.FillFromDictionary("displayDT$lineBomDT", "mfgPN_Dict", "mpnMfg", "mfgCrossPN")
+	f.Data.Dictionary.Close("mfgPN_Dict")
+	
+	'Check names
+	f.Data.DataView.Create("displayDT$lineBomDT", "mnpDV", 22)
+
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		'get the item no and use it to create a filter.
+		v.Local.sCurrentItem.Set(v.DataTable.displayDT(v.Local.iCnt).ItemNo!FieldValTrim)
+		f.Intrinsic.String.Build("itemNo = '{0}'", v.Local.sCurrentItem, v.Local.sFilter)
+		f.Data.DataView.SetFilter("displayDT", "mnpDV", v.Local.sFilter)
+		'Get a string of part numbers, and remove duplicates of the array, if different than 0 or 1 it has multiple.
+		f.Data.DataView.ToString("displayDT$lineBomDT", "mnpDV", "mfgCrossPN", "*!*", ",", v.Local.sTemp)
+		f.Intrinsic.String.Split(v.Local.sTemp, ",", v.Local.sNameArray)
+		f.Intrinsic.String.RemoveArrayDuplicates(v.Local.sNameArray, v.Local.sNameArray)
+		'Set U bound as name check
+		f.Intrinsic.Math.Add(v.Local.sNameArray.UBound, 1, v.Local.iCheckName)
+		f.Data.DataTable.SetValue("displayDT", v.Local.iCnt, "nameCheck", v.Local.iCheckName)
+		'Make sure the only have 1
+		f.Intrinsic.Control.If(v.Local.sNameArray.UBound, =, 0)
+			'Add to Dictionay
+			f.Data.Dictionary.AddItem("itemPartNo", v.Local.sCurrentItem, v.Local.sNameArray(0))
+		f.Intrinsic.Control.EndIf
+		'Make sure we used the correct array unit.
+		f.Intrinsic.Control.If(v.Local.sNameArray.UBound, =, 1)
+			f.Intrinsic.Control.If(v.Local.sNameArray(0).Trim, <>, "")	
+				'Add to Dictionay
+				f.Data.Dictionary.AddItem("itemPartNo", v.Local.sCurrentItem, v.Local.sNameArray(0))
+			f.Intrinsic.Control.ElseIf(v.Local.sNameArray(1).Trim, <>, "")	
+				'Add to Dictionay
+				f.Data.Dictionary.AddItem("itemPartNo", v.Local.sCurrentItem, v.Local.sNameArray(1))
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+		
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	'Fill Datatables.
+	f.Data.DataTable.FillFromDictionary("displayDT", "itemPartNo", "itemNo", "gssPartNo")
+	f.Data.DataTable.FillFromDictionary("displayDT$lineBomDT", "itemPartNo", "itemNo", "gssPartNo")
+	f.Data.Dictionary.Close("itemPartNo")
+	'Close DV
+	f.Data.DataView.Close("displayDT$lineBomDT", "mnpDV")
+	'Get Bom Parent Part No.
+	v.Local.sMFG.Set(v.Screen.Form!txt_Mfg.Text)
+	v.Local.sMPN.Set(v.Screen.Form!txt_MfgPart.Text)
+	f.ODBC.Connection!con.OpenCompanyConnection
+		f.Intrinsic.String.Build("Select distinct PART FROM INV_CROSS_REF where mfg_part = '{0}' and mfg_name = '{1}'", v.Local.sMPN.Trim, v.Local.sMFG.Trim, v.Local.sSQL)
+		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sBomName)
+	f.ODBC.Connection!con.Close	
+	'Remove duplicate Results.
+	f.Intrinsic.Control.If(v.Local.sBomName.Trim, <>, "")
+		f.Intrinsic.String.Split(v.Local.sBomName, "#$#", v.Local.sBomName)
+		gui.Form.txt_PartNumber.Text(v.Local.sBomName(0))
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.checkPN.End
+
+Program.Sub.cmd_CheckRD_Click.Start
+v.Local.sLine_RefDesig.Declare
+v.Local.sAll_RefDesig.Declare
+
+v.Local.sNameArray.Declare
+v.Local.iLineQty.Declare
+v.Local.iAllQty.Declare
+
+v.Local.sTemp.Declare
+v.Local.sFilter.Declare
+v.Local.sSQL.Declare
+
+v.Local.iCnt.Declare
+
+f.Intrinsic.Control.Try
+	'Disable Screen.
+	gui.Form..Enabled(False)
+	'Disable Screen.
+	gui.Form..Enabled(False)
+	
+	gui.Form.progressBar1.Value(0)
+	gui.Form.progressBar1.Visible(True)
+	gui.Form.progressBar1.Value(10)
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		'Get the ref designator from each line, and compare it to the quantity.
+		v.Local.sLine_RefDesig.Set(v.DataTable.displayDT(v.Local.iCnt).refDesg!FieldValTrim)
+		f.Intrinsic.String.Split(v.Local.sLine_RefDesig, ",", v.Local.sNameArray)
+		f.Intrinsic.String.RemoveArrayDuplicates(v.Local.sNameArray, v.Local.sNameArray)
+		'Get the line qty and
+		v.Local.iLineQty.Set(v.DataTable.displayDT(v.Local.iCnt).qty!FieldVal)
+		'add the qty to variable for complete qty,
+		f.Intrinsic.Math.Add(v.Local.iAllQty, v.Local.iLineQty, v.Local.iAllQty)
+		'remove 1 to match Ubound starting 0.
+		f.Intrinsic.Math.Sub(v.Local.iLineQty, 1, v.Local.iLineQty)
+		' check it agaisnt the ubound of the array.
+		f.Intrinsic.Control.If(v.Local.iLineQty, <>, v.Local.sNameArray.UBound)			
+			'Flag if Ref Designators are not equal.
+			f.Data.DataTable.SetValue("displayDT", v.Local.iCnt, "refDesgCheck", 1)
+		f.Intrinsic.Control.EndIf
+		
+		'Add Line to variable for all lines.
+		f.Intrinsic.Control.If(v.Local.sAll_RefDesig.Trim, =, "")
+			v.Local.sAll_RefDesig.Set(v.Local.sLine_RefDesig)
+		f.Intrinsic.Control.Else
+			f.Intrinsic.String.Build("{0},{1}", v.Local.sAll_RefDesig, v.Local.sLine_RefDesig, v.Local.sAll_RefDesig)
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	gui.Form.progressBar1.Value(25)
+	'Get the ref designator from all lines, and compare it to the quantity
+	f.Intrinsic.String.Split(v.Local.sAll_RefDesig, ",", v.Local.sNameArray)
+	'Upload to database
+	f.Data.DataTable.CreateFromString("rdTempDT", v.Local.sAll_RefDesig, "REF_DESIGNATOR", "String", "*!*", ",", true)
+	'Add extra Columns and add Series
+	f.Data.DataTable.AddColumn("rdTempDT", "USER_ID", "String", v.Caller.User)
+	f.Data.DataTable.AddColumn("rdTempDT", "REF_ID", "Long")
+	f.Data.DataTable.SetSeries("rdTempDT", "REF_ID", 0, 1)
+	gui.Form.progressBar1.Value(30)
+	
+	f.ODBC.Connection!con.OpenCompanyConnection
+		'upload the temp dt.
+	 	f.Data.DataTable.SaveToDB("rdTempDT", "con", "GCG_5786_RD_TEMP", "USER_ID*!*REF_ID", 1)
+	 	'download the table.
+	 	f.Data.DataTable.CreateFromSQL("rdCountDT", "con", "Select REF_DESIGNATOR, Count(REF_DESIGNATOR) as countRD from GCG_5786_RD_TEMP WHERE USER_ID = 'SUPERVSR' GROUP BY REF_DESIGNATOR")
+	 	'Delete Records
+	 	f.Intrinsic.String.Build("Delete from GCG_5786_RD_TEMP where USER_ID ='{0}'", v.Caller.User, v.Local.sSQL)
+	 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+	f.ODBC.Connection!con.Close
+	gui.Form.progressBar1.Value(40)
+	'Filter the ones with extra lines.
+	f.Data.DataView.Create("rdCountDT", "rdCountDV", 22, "countRD > 1", "")
+	'Loop through the filtered Table.
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataView.rdCountDT!rdCountDV.RowCount--, 1)
+		'Get the Referece Designator and Create Filter for updating flag in main screen. (Display Table)
+		v.Local.sTemp.Set(v.DataView.rdCountDT!rdCountDV(v.Local.iCnt).REF_DESIGNATOR!FieldValTrim)
+		f.Intrinsic.String.Build("refDesg = '{0}'", v.Local.sTemp, v.Local.sFilter)
+		'Create New View for updating.
+		f.Data.DataView.Create("displayDT", "tempDisplayDV", 22, v.Local.sFilter, "")
+		'Set Value for all filtered view.
+		f.Data.DataView.SetValue("displayDT", "tempDisplayDV", -1,"allRefDesgCheck", 1)
+		'Accept changes and close Temp View.
+		f.Data.DataTable.AcceptChanges("displayDT")
+		f.Data.DataView.Close("displayDT", "tempDisplayDV")
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	gui.Form.progressBar1.Value(60)
+	f.Data.DataView.ToDataTable("rdCountDT", "rdCountDV", "tmpDuplicateDT")
+	f.Data.DataView.Close("rdCountDT", "rdCountDV")
+	gui.Form.progressBar1.Value(80)
+	'Mere rdCount to duplicates GV
+	f.Data.DataTable.DeleteRow("duplicateDT")
+	f.Data.DataTable.AcceptChanges("duplicateDT")
+	f.Data.DataTable.Merge("tmpDuplicateDT", "duplicateDT", false, 2)
+	'Close Dts.
+	f.Data.DataTable.Close("rdTempDT")
+	f.Data.DataTable.Close("rdCountDT")
+	gui.Form.progressBar1.Value(100)
+	gui.Form.progressBar1.Visible(False)
+	gui.Form.progressBar1.Value(0)
+	'Enable Screen.
+	gui.Form..Enabled(True)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd_CheckRD_Click.End
+
+Program.Sub.Form_UnLoad.Start
+f.Intrinsic.Control.Try
+	f.Intrinsic.Control.End
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.Form_UnLoad.End
+
+Program.Sub.cmdBOM_Upload_Click.Start
+v.Local.sCust.Declare
+f.Intrinsic.Control.Try
+	'Disable Screen.
+	gui.Form..Enabled(False)
+	f.Intrinsic.Control.If(v.DataView.libBomCompleteDT!libBomCompleteDV.Exists)
+		f.Data.DataView.Close("libBomCompleteDT", "libBomCompleteDV")
+	f.Intrinsic.Control.EndIf
+	'Check If all gss part are populated.
+	f.Data.DataView.Create("libBomCompleteDT", "libBomCompleteDV", 22, "gssPartNo = ''", "")
+	f.Intrinsic.Control.If(v.DataView.libBomCompleteDT!libBomCompleteDV.RowCount, >, 0)
+		'Enable Screen.
+		gui.Form..Enabled(True)
+		'Show Message
+		f.Intrinsic.UI.Msgbox("Not all the records have an Internal GSS Part Number")
+		'Exit sub.
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'Save Reference Designator,	
+	f.Intrinsic.Control.CallSub("getReferenceDesignators")
+	'upload Bom
+	f.Intrinsic.Control.CallSub("uploadBom")	
+	'Save Bom import Data.	
+	f.Intrinsic.Control.CallSub("bomImportData")
+	'Create Cross References.
+	f.Intrinsic.Control.CallSub("createCrossRef")
+	'save Enviromental Data.
+	f.Intrinsic.UI.Msgbox("Upload Completed")
+	'Enable Screen.
+	f.Data.DataView.Close("libBomCompleteDT", "libBomCompleteDV")
+	gui.Form..Enabled(True)
+	f.Intrinsic.Control.End
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdBOM_Upload_Click.End
+
+Program.Sub.cmdCreatePN_Click.Start
+v.Local.sPartClass.Declare
+v.Local.sPartType.Declare
+v.Local.sPartPrefix.Declare
+v.Local.sNewPartNumber.Declare
+v.Local.sSQL.Declare
+
+v.Local.sTextData.Declare
+v.Local.sFilePath.Declare
+
+v.Local.iCnt.Declare
+v.Local.iItemNo.Declare
+v.Local.sFilter.Declare
+
+v.Local.sDescTemplate.Declare
+v.Local.sInv_UM.Declare
+v.Local.sPurch_UM.Declare
+v.Local.sPackage.Declare
+v.Local.sABC.Declare
+v.Local.fRunScrap.Declare
+v.Local.iSetupQty.Declare
+v.Local.iOrderQty.Declare
+v.Local.iSafetyStock.Declare
+v.Local.iReorderPoint.Declare
+v.Local.sBuyer.Declare
+v.Local.iLeadDays.Declare
+v.Local.fAmtCost.Declare
+
+v.Local.sCust.Declare
+'v.Local.bInspection.Declare
+'v.Local.bCertificate.Declare
+'v.Local.sCertificateFormatted.Declare
+'v.Local.sInspectionFormatted.Declare
+
+v.Local.sMRC.Declare
+v.Local.sNCNR.Declare
+v.Local.sCertType.Declare
+v.Local.sSensitive.Declare
+v.Local.sDocumentation.Declare
+f.Intrinsic.Control.Try
+	'Disable Screen.
+	gui.Form..Enabled(False)
+	'Start Progress bar.
+	gui.Form.progressBar1.Value(0)
+	gui.Form.progressBar1.Visible(True)
+	'Check if customer is empty
+	v.Local.sCust.Set(v.Screen.Form!txt_Cust.Text)
+	f.Intrinsic.Control.If(v.Local.sCust.Trim, =, "")
+		f.Intrinsic.UI.Msgbox("Please Select a Customer for this Assembly")
+		'Enable Screen.
+		gui.Form..Enabled(True)
+		gui.Form.progressBar1.Visible(False)
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf		
+	'Create custom part Number Dictionaries.
+	f.Data.Dictionary.Create("pn4Components")
+	gui.Form.progressBar1.Value(10)
+	'Bom New Part.
+	'Check if it needs a new Part Number.
+	v.Local.sNewPartNumber.Set(v.Screen.Form!txt_PartNumber.Text)
+	f.Intrinsic.Control.If(v.Local.sNewPartNumber, =, "")
+		'Set Valriables
+		v.Local.sPartClass.Set(v.Screen.Form!txt_PartClass.Text)
+		v.Local.sPartType.Set(v.Screen.Form!txt_PartType.Text)
+		'Get Prefix
+		f.ODBC.Connection!con.OpenCompanyConnection
+		 	f.Intrinsic.String.Build("Select top 1 Part_Prefix from GCG_5787_PART_TYPE where Class_ID ='{0}' and Type_ID = '{1}'", v.Local.sPartClass, v.Local.sPartType, v.Local.sSQL)
+		 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sPartPrefix)
+		f.ODBC.Connection!con.Close		
+		'Create Part for Bom
+		f.Intrinsic.Control.CallSub(newPartNumber, sPassedClass, v.Local.sPartClass.Trim, sPassedType, v.Local.sPartType, sPassedPrefix, v.Local.sPartPrefix)
+		'Set the Bom Part Number to the TXT Box.
+		gui.Form.txt_PartNumber.Text(v.Global.sCurrentNewPartNumber)
+		f.Data.Dictionary.AddItem("pn4Components", 1, v.Global.sCurrentNewPartNumber)
+		v.Local.sTextData.Set(v.Global.sCurrentNewLine)
+	f.Intrinsic.Control.Else
+		'Add Bom Parent to dictionary
+		f.Data.Dictionary.AddItem("pn4Components", 1, v.Local.sNewPartNumber)
+	f.Intrinsic.Control.EndIf
+	gui.Form.progressBar1.Value(20)
+	'Create Custom Part Numbers for Bom Components.
+
+	'Create PN for each Row.
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		'tEST
+		f.Intrinsic.Control.If(v.Local.iCnt, =, 20)
+		
+		f.Intrinsic.Control.EndIf
+		v.Local.iItemNo.Set(v.DataTable.displayDT(v.Local.iCnt).itemNo!FieldVal)
+		v.Local.sPartClass.Set(v.DataTable.displayDT(v.Local.iCnt).partClass!FieldVal)
+		v.Local.sPartType.Set(v.DataTable.displayDT(v.Local.iCnt).partType!FieldVal)
+		v.Local.sNewPartNumber.Set(v.DataTable.displayDT(v.Local.iCnt).gssPartNo!FieldValTrim)
+		
+		'Create Filter for defaults values
+		f.Intrinsic.String.Build("itemNo = '{0}'", v.Local.iItemNo, v.Local.sFilter)
+		f.Data.DataView.Create("libBomCompleteDT", "libBomCompleteDV", 22, v.Local.sFilter, "")
+		
+		v.Local.sDescTemplate.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		v.Local.sInv_UM.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).invUM!FieldValTrim)
+		v.Local.sPurch_UM.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).purchUM!FieldValTrim)
+		v.Local.sPackage.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).package!FieldValTrim)
+		'v.Local.sABC.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).ABC!FieldValTrim)
+		'v.Local.fRunScrap.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		v.Local.iSetupQty.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).minOrder!FieldValTrim)
+		v.Local.iOrderQty.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).multOrder!FieldValTrim)
+		'v.Local.iSafetyStock.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.iReorderPoint.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.sBuyer.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		v.Local.iLeadDays.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).leadTimes!FieldVal)
+		v.Local.fAmtCost.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).stdCost!FieldVal)
+		
+		'v.Local.sMRC.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.sNCNR.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.sCertType.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.sSensitive.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+		'v.Local.sDocumentation.Set(v.DataView.libBomCompleteDT!libBomCompleteDV(0).description!FieldValTrim)
+			
+		'Close DV
+		f.Data.DataView.Close("libBomCompleteDT", "libBomCompleteDV")
+		
+		'Get Prefix
+		f.ODBC.Connection!con.OpenCompanyConnection
+		 	f.Intrinsic.String.Build("Select top 1 Part_Prefix from GCG_5787_PART_TYPE where Class_ID ='{0}' and Type_ID = '{1}'", v.Local.sPartClass, v.Local.sPartType, v.Local.sSQL)
+		 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sPartPrefix)
+		f.ODBC.Connection!con.Close
+		'Check if row has Part Number.
+		f.Intrinsic.Control.If(v.Local.sNewPartNumber, =, "")			
+			'Create Part for Line
+			f.Intrinsic.Control.CallSub(newPartNumber, sPassedClass, v.Local.sPartClass.Trim, sPassedType, v.Local.sPartType, sPassedPrefix, v.Local.sPartPrefix, sPassedDesc, v.Local.sDescTemplate, sPassedInv_UM, v.Local.sInv_UM, sPassedPurch_UM, v.Local.sPurch_UM, sPassedPackage, v.Local.sPackage, sPassedABC, v.Local.sABC, fPassedRunScrap, v.Local.fRunScrap, iPassedSetupQty, v.Local.iSetupQty, iPassedOrderQty, v.Local.iOrderQty, iPassedSafetyStock, v.Local.iSafetyStock, iPassedReorderPoint, v.Local.iReorderPoint, sPassedBuyer, v.Local.sBuyer, iPassedLeadDays, v.Local.iLeadDays, fPassedAmtCost, v.Local.fAmtCost, sPassedMRC, v.Local.sMRC, sPassedNCNR, v.Local.sNCNR, sPassedCertType, v.Local.sCertType, sPassedSensitive, v.Local.sSensitive, sPassedDocumentation, v.Local.sDocumentation)		
+			'add item to Dictionary.
+			f.Data.Dictionary.AddItem("pn4Components", v.Local.iItemNo, v.Global.sCurrentNewPartNumber)
+			'add line to data.
+			f.Intrinsic.Control.If(v.Local.sTextData.Trim, <>, "")
+				f.Intrinsic.String.Build("{0}{1}{2}", v.Local.sTextData, v.Ambient.NewLine, v.Global.sCurrentNewLine, v.Local.sTextData)
+			f.Intrinsic.Control.EndIf		
+		f.Intrinsic.Control.Else
+			f.Data.Dictionary.AddItem("pn4Components", v.Local.iItemNo, v.Local.sNewPartNumber)
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	gui.Form.progressBar1.Value(40)
+	'Create File Path
+	f.Intrinsic.String.Build("{0}\INV.TXT", v.Caller.FilesDir, v.Local.sFilePath)
+	f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sTextData)
+	
+	'Call 1Shot Program to upload a part.
+	f.Global.General.CallWrapperSync(50, "UPLINV/NOMAINT")
+	gui.Form.progressBar1.Value(60)
+	'Fill from Dictionary
+	f.Data.Dictionary.SetDefaultReturn("pn4Components", " ")
+	f.Data.DataTable.FillFromDictionary("displayDT", "pn4Components", "itemNo", "gssPartNo")
+	f.Data.DataTable.FillFromDictionary("displayDT$lineBomDT", "pn4Components", "itemNo", "gssPartNo")
+	f.Data.DataTable.FillFromDictionary("libBomCompleteDT", "pn4Components", "itemNo", "gssPartNo")
+	f.Data.Dictionary.Close("pn4Components")
+	gui.Form.progressBar1.Value(60)
+'	'Create Cross References.
+'	f.Intrinsic.Control.CallSub("createCrossRef")
+	gui.Form.progressBar1.Value(90)
+	'Enable Screen.
+	gui.Form.progressBar1.Value(100)
+	gui.Form..Enabled(True)
+	gui.Form.cmdBOM_Upload.Enabled(True)
+	gui.Form.progressBar1.Visible(False)
+	gui.Form.progressBar1.Value(0)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdCreatePN_Click.End
+
+Program.Sub.createCrossRef.Start
+v.Local.sGssPartNo.Declare
+v.Local.sGssPartNoFormatted.Declare
+v.Local.sGssRev.Declare
+v.Local.sCust.Declare
+v.Local.sCustPartNo.Declare
+v.Local.sCustRev.Declare
+v.Local.sCustDescription.Declare
+v.Local.sMFG.Declare
+v.Local.sMPN.Declare
+
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+
+v.Local.iCnt.Declare
+v.Local.iCurrentVendor.Declare
+v.Local.sVendor.Declare
+v.Local.sVendorDesc.Declare
+v.Local.sDesc.Declare
+
+v.Local.sText.Declare
+v.Local.sFilePath.Declare
+
+
+f.Intrinsic.Control.Try
+	'Set Crossreference for BOM.
+	v.Local.sGssPartNo.Set(v.Screen.Form!txt_PartNumber.Text)
+	v.Local.sGssRev.Set(v.Screen.Form!txt_PartRev.Text)
+	v.Local.sMFG.Set(v.Screen.Form!txt_Mfg.Text)
+	v.Local.sMPN.Set(v.Screen.Form!txt_MfgPart.Text)
+	v.Local.sCust.Set(v.Screen.Form!txt_Cust.Text)
+	v.Local.sDesc.Set(v.Screen.Form!txt_Description.Text)
+	v.Local.sCustPartNo.Set(v.DataTable.libBomParent(0).custPartNum!FieldValTrim)
+	v.Local.sCustRev.Set(v.DataTable.libBomParent(0).custRev!FieldValTrim)
+	v.Local.sCustDescription.Set(v.DataTable.libBomParent(0).description!FieldValTrim)
+	
+	
+	'format part number.
+	f.Intrinsic.String.RPad(v.Local.sGssPartNo, " ", 17, v.Local.sGssPartNoFormatted)
+	f.Intrinsic.String.Build("{0}{1}", v.Local.sGssPartNoFormatted, v.Local.sGssRev, v.Local.sGssPartNoFormatted)
+	f.Intrinsic.String.RPad(v.Local.sGssPartNoFormatted, " ", 20, v.Local.sGssPartNoFormatted)
+	
+	'Check if the Bom part number exists.
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.String.Build("Select Part from V_Inventory_Mstr where Part = '{0}'", v.Local.sGssPartNo, v.Local.sSQL)
+	 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+	f.ODBC.Connection!con.Close
+			
+	f.Intrinsic.Control.If(v.Local.sRet, <>, "")
+		'Check if the customer part number exists.
+		f.ODBC.Connection!con.OpenCompanyConnection
+	 		f.Intrinsic.String.Build("Select C_PART from GCG_5786_CUST_XREF where C_PART = '{0}' and C_REV = '{1}'", v.Local.sCustPartNo, v.Local.sCustRev, v.Local.sSQL)
+	 		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+		f.ODBC.Connection!con.Close
+		'If it doesn't, create a new record.
+		f.Intrinsic.Control.If(v.Local.sRet, =, "")					
+			f.ODBC.Connection!con.OpenCompanyConnection
+			 	f.Intrinsic.String.Build("Insert into  GCG_5786_CUST_XREF (PART, C_ID, C_PART, C_REV, C_DESCRIPTION) Values ('{0}', '{1}', '{2}', '{3}', '{4}')", v.Local.sGssPartNo.Trim, v.Local.sCust.Trim, v.Local.sCustPartNo.Trim, v.Local.sCustRev.Trim, v.Local.sCustDescription.Trim, v.Local.sSQL)
+			 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+			f.ODBC.Connection!con.Close
+		f.Intrinsic.Control.EndIf
+		'Check if the mfg and mpn part exist.
+		f.ODBC.Connection!con.OpenCompanyConnection
+	 		f.Intrinsic.String.Build("Select mfg_part from INV_CROSS_REF where part = '{0}' and mfg_part = '{1}'and mfg_name = '{2}'", v.Local.sGssPartNoFormatted, v.Local.sMPN, v.Local.sMFG, v.Local.sSQL)
+	 		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+		f.ODBC.Connection!con.Close
+		'If it doesn't create a new record.
+		f.Intrinsic.Control.If(v.Local.sRet, =, "")	
+			f.ODBC.Connection!con.OpenCompanyConnection
+			 	f.Intrinsic.String.Build("Insert into  INV_CROSS_REF (PART, MFG_PART, MFG_NAME, DESCRIPTION) Values ('{0}', '{1}', '{2}', '{3}')", v.Local.sGssPartNoFormatted, v.Local.sMPN, v.Local.sMFG, v.Local.sDesc, v.Local.sSQL)
+			 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+			f.ODBC.Connection!con.Close
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf		
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT$LineBomDT.RowCount--, 1)
+		'Set Variables.
+		v.Local.sGssPartNo.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).gssPartNo!FieldValTrim)
+		v.Local.sGssRev.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).gssRev!FieldValTrim)
+		v.Local.sCustPartNo.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).custPartNo!FieldValTrim)
+		v.Local.sCustRev.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).custRev!FieldValTrim)
+		v.Local.sCustDescription.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).description!FieldValTrim)
+		v.Local.sMFG.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).mfg!FieldValTrim)
+		v.Local.sMPN.Set(v.DataTable.displayDT$LineBomDT(v.Local.iCnt).mpn!FieldValTrim)
+		v.Local.sRet.Set("")
+		
+		'Check that internal part number is filled.
+		f.Intrinsic.Control.If(v.Local.sGssPartNo.Trim, <>, "")	
+			'format part number.
+			f.Intrinsic.String.RPad(v.Local.sGssPartNo, " ", 17, v.Local.sGssPartNoFormatted)
+			f.Intrinsic.String.Build("{0}{1}", v.Local.sGssPartNoFormatted, v.Local.sGssRev, v.Local.sGssPartNoFormatted)
+			f.Intrinsic.String.RPad(v.Local.sGssPartNoFormatted, " ", 20, v.Local.sGssPartNoFormatted)
+			'Check if the internal part number exists.
+			f.ODBC.Connection!con.OpenCompanyConnection
+			 	f.Intrinsic.String.Build("Select Part from V_Inventory_Mstr where Part = '{0}'", v.Local.sGssPartNo, v.Local.sSQL)
+			 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+			f.ODBC.Connection!con.Close
+			
+			f.Intrinsic.Control.If(v.Local.sRet, <>, "")
+				'Check if the customer part number exists.
+				f.ODBC.Connection!con.OpenCompanyConnection
+			 		f.Intrinsic.String.Build("Select C_Active from GCG_5786_CUST_XREF where C_PART = '{0}' and C_REV = '{1}' and C_Active = '1'", v.Local.sCustPartNo, v.Local.sCustRev, v.Local.sSQL)
+			 		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+				f.ODBC.Connection!con.Close
+				'If it doesn't, create a new record.
+				f.Intrinsic.Control.If(v.Local.sRet, =, "")					
+					f.ODBC.Connection!con.OpenCompanyConnection
+					 	f.Intrinsic.String.Build("Insert into  GCG_5786_CUST_XREF (PART, C_ID, C_PART, C_REV, C_DESCRIPTION, C_Active, C_USER, C_DATE) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '1', '{5}', '{6}')", v.Local.sGssPartNo.Trim, v.Local.sCust.Trim, v.Local.sCustPartNo.Trim, v.Local.sCustRev.Trim, v.Local.sCustDescription.Trim, v.Caller.User, v.Ambient.Date.PervasiveDate, v.Local.sSQL)
+			 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+					f.ODBC.Connection!con.Close
+				f.Intrinsic.Control.EndIf
+				'Check if the mfg and mpn part exist.
+				f.ODBC.Connection!con.OpenCompanyConnection
+			 		f.Intrinsic.String.Build("Select * from INV_CROSS_REF where part = '{0}' and mfg_part = '{1}' and mfg_name = '{2}'", v.Local.sGssPartNoFormatted, v.Local.sMPN, v.Local.sMFG, v.Local.sSQL)
+			 		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+				f.ODBC.Connection!con.Close
+				'If it doesn't create a new record.
+				f.Intrinsic.Control.If(v.Local.sRet, =, "")	
+					'Check if it is a unique record.
+					f.ODBC.Connection!con.OpenCompanyConnection
+				 		f.Intrinsic.String.Build("Select mfg_part from INV_CROSS_REF where part = '{0}' and mfg_part = '{1}'", v.Local.sGssPartNoFormatted, v.Local.sMPN, v.Local.sSQL)
+				 		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+					f.ODBC.Connection!con.Close
+					
+					f.Intrinsic.Control.If(v.Local.sRet.Trim, =, "")
+						'if it is a unique record, set vendor to empty
+						v.Local.sVendor.Set("")
+						v.Local.iCurrentVendor.Set(0)
+					f.Intrinsic.Control.Else
+						'if it isn't a uinque record create a vendor
+						f.Intrinsic.String.LPad(v.Local.iCurrentVendor.++, "0", 3, v.Local.sVendor)
+						f.Intrinsic.String.Build("PHA{0}", v.Local.sVendor, v.Local.sVendor)
+						'Vendor Description
+						f.Intrinsic.String.Build("Phanton Vendor Number", v.Local.iCurrentVendor, v.Local.sVendorDesc)
+						'Vendor Text File for Upload
+						f.Intrinsic.String.Build("{0}{1}", v.Local.sVendor, v.Local.sVendorDesc, v.Local.sText)
+						'Vendor Text File Path.
+						f.Intrinsic.String.Build("{0}\VENDOR.TXT", v.Caller.FilesDir, v.Local.sFilePath)
+						'Check if vendor exists.
+						f.ODBC.Connection!con.OpenCompanyConnection
+							f.Intrinsic.String.Build("Select Vendor from V_VENDOR_MASTER where Vendor = '{0}'", v.Local.sVendor, v.Local.sSQL)
+							f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+						f.ODBC.Connection!con.Close
+						f.Intrinsic.Control.If(v.Local.sRet.Trim, =, "")
+							'Add Vendor
+							f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+							f.Global.General.CallWrapperSync(50, "UPLVEND")
+						f.Intrinsic.Control.EndIf
+					f.Intrinsic.Control.EndIf
+					'Insert Inv Cross Ref with Vendor
+					f.ODBC.Connection!con.OpenCompanyConnection
+					 	f.Intrinsic.String.Build("Insert into  INV_CROSS_REF (PART, MFG_PART, MFG_NAME, Vendor, Description) Values ('{0}', '{1}', '{2}', '{3}', '{4}')", v.Local.sGssPartNoFormatted, v.Local.sMPN, v.Local.sMFG, v.Local.sVendor, v.Local.sCustDescription, v.Local.sSQL)
+					 	f.ODBC.Connection!con.Execute(v.Local.sSQL)
+					f.ODBC.Connection!con.Close
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.EndIf		
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.createCrossRef.End
+
+Program.Sub.uploadBom.Start
+v.Local.sParentName.Declare
+v.Local.sComponentPartNumber.Declare
+v.Local.sQty.Declare
+v.Local.sSource.Declare
+v.Local.sBlankSpaces.Declare
+v.Local.sPartClass.Declare
+v.Local.sPartType.Declare
+v.Local.sUM.Declare
+v.Local.sWC.Declare
+
+v.Local.sSQL.Declare
+v.Local.iCnt.Declare
+v.Local.sLine.Declare
+v.Local.sText.Declare
+v.Local.sFilePath.Declare
+f.Intrinsic.Control.Try
+
+	'Get Parent Name And Format.
+	v.Local.sParentName.Set(v.Screen.Form!txt_PartNumber.Text)
+	f.Intrinsic.String.RPad(v.Local.sParentName.Trim, " ", 20, v.Local.sParentName)
+	'Write a line for each row.
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		'Get Internal Part and Format it.
+		v.Local.sComponentPartNumber.Set(v.DataTable.displayDT(v.Local.iCnt).gssPartNo!FieldValTrim)
+		f.Intrinsic.String.RPad(v.Local.sComponentPartNumber, " ", 17, v.Local.sComponentPartNumber)
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sComponentPartNumber, v.DataTable.displayDT(v.Local.iCnt).gssRev!FieldValTrim, v.Local.sComponentPartNumber)
+		f.Intrinsic.String.RPad(v.Local.sComponentPartNumber, " ", 20, v.Local.sComponentPartNumber)
+		'Get Quantity and Format.		
+		v.Local.sQty.Set(v.DataTable.displayDT(v.Local.iCnt).qty!FieldVal)
+		f.Intrinsic.String.Build("{0}.0000", v.Local.sQty, v.Local.sQty)
+		f.Intrinsic.String.LPad(v.Local.sQty, " ", 16, v.Local.sQty)
+		'Get UM
+		v.Local.sUM.Set(v.DataTable.displayDT(v.Local.iCnt).invUM!FieldValTrim)
+		f.Intrinsic.String.Left(v.Local.sUM, 2, v.Local.sUM)
+		f.Intrinsic.String.RPad(v.Local.sUM, " ", 2, v.Local.sUM)
+		'Get Source.
+		v.Local.sPartClass.Set(v.DataTable.displayDT(v.Local.iCnt).partClass!FieldValTrim)
+		v.Local.sPartType.Set(v.DataTable.displayDT(v.Local.iCnt).partType!FieldValTrim)
+		f.Intrinsic.String.Build("Select MRC from GCG_5787_CLASS_TYPE where Class_ID = '{0}' and Type_ID = '{1}'", v.Local.sPartClass.Trim, v.Local.sPartType.Trim, v.Local.sSQL)
+		f.ODBC.Connection!con.OpenCompanyConnection
+		 	f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sSource)
+		f.ODBC.Connection!con.Close
+		f.Intrinsic.Control.If(v.Local.sSource.Trim, =, "")
+			v.Local.sSource.Set("J")
+		f.Intrinsic.Control.EndIf
+		f.Intrinsic.String.Left(v.Local.sSource, 1, v.Local.sSource)
+		'Get Workcenter (Tag)
+		v.Local.sWC.Set(v.DataTable.displayDT(v.Local.iCnt).Workcenter.FieldValTrim)
+		f.Intrinsic.String.Left(v.Local.sWC.Trim, 6, v.Local.sWC)
+		f.Intrinsic.String.RPad(v.Local.sWC, " ", 6, v.Local.sWC)
+		
+		'Write Line.
+		'Parent Number 1-20/20
+		v.Local.sLine.Set(v.Local.sParentName)
+		'Component Part Number 21-40/20
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sComponentPartNumber, v.Local.sLine)
+		'Quantity 52-56/16
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sQty, v.Local.sLine)
+		'Unit of Measure 57-58/2
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sUM, v.Local.sLine)
+		'Format Blank
+		f.Intrinsic.String.RPad(v.Local.sBlankSpaces.Trim, " ", 137, v.Local.sBlankSpaces)
+		'Blank Space 59-195/137
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sBlankSpaces, v.Local.sLine)
+		'Workcenter (Tag) 196-201/6
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sWC, v.Local.sLine)
+		'Format Blank
+		f.Intrinsic.String.RPad(v.Local.sBlankSpaces.Trim, " ", 1, v.Local.sBlankSpaces)
+		'Blank Space 202-202/1
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sBlankSpaces, v.Local.sLine)
+		'Source 203-203/1
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sLine, v.Local.sSource, v.Local.sLine)
+		'Add Lines to Text.
+		f.Intrinsic.Control.If(v.Local.sText.Trim, =, "")
+			v.Local.sText.Set(v.Local.sLine)
+		f.Intrinsic.Control.Else
+			f.Intrinsic.String.Build("{0}{1}{2}", v.Local.sText, v.Ambient.NewLine, v.Local.sLine, v.Local.sText)
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	'Get File Path
+	f.Intrinsic.String.Build("{0}/BOMC.TXT", v.Caller.FilesDir, v.Local.sFilePath)
+	f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+	'Call 1Shot Program
+	f.Global.General.CallWrapperSync(50, "UPLBOMC")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.uploadBom.End
+
+Program.Sub.getReferenceDesignators.Start
+v.Local.sRefDesig.Declare
+v.Local.sBomParent.Declare
+v.Local.sPart.Declare
+v.Local.sSQL.Declare
+v.Local.sRetID.Declare
+
+v.Local.iCnt.Declare
+f.Intrinsic.Control.Try
+	'Get Bom Parent
+	v.Local.sBomParent.Set(v.Screen.Form!txt_PartNumber.Text)
+	'Check if the BOM Exists.
+	f.ODBC.Connection!con.OpenCompanyConnection
+		f.Intrinsic.String.Build("Select BOM_PARENT from GCG_5786_BOMIMPORT where BOM_PARENT = '{0}'", v.Local.sBomParent.Trim, v.Local.sSQL)
+		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRetID)
+	f.ODBC.Connection!con.Close
+	f.Intrinsic.Control.If(v.Local.sRetID.Trim, <>, "")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf	
+	'Create Table for Upload.
+	f.Data.DataTable.Create("refUploadDT")
+	f.Data.DataTable.AddColumn("refUploadDT", "REF_DESIG", "String")
+	f.Data.DataTable.AddColumn("refUploadDT", "PARENT_BOM", "String", v.Local.sBomParent)
+	f.Data.DataTable.AddColumn("refUploadDT", "PART", "String")
+	'Get Each Line for 
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT.RowCount--, 1)
+		'Get Single Part.
+		v.Local.sPart.Set(v.DataTable.displayDT(v.Local.iCnt).gssPartNo!FieldValTrim)
+		f.Intrinsic.String.RPad(v.Local.sPart, " ", 17, v.Local.sPart)
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sPart, v.DataTable.displayDT(v.Local.iCnt).gssRev!FieldValTrim, v.Local.sPart)
+		f.Intrinsic.String.RPad(v.Local.sPart, " ", 20, v.Local.sPart)
+		'Get Ref Designators
+		v.Local.sRefDesig.Set(v.DataTable.displayDT(v.Local.iCnt).refDesg!FieldValTrim)
+		'Create Temp Table for Upload.
+		f.Data.DataTable.CreateFromString("tmpRefUploadDT", v.Local.sRefDesig, "REF_DESIG", "String", "*!*", ",")
+		f.Data.DataTable.AddColumn("tmpRefUploadDT", "PARENT_BOM", "String", v.Local.sBomParent)
+		f.Data.DataTable.AddColumn("tmpRefUploadDT", "PART", "String", v.Local.sPart)
+		'Merge Tmp into Upload.
+		f.Data.DataTable.Merge("tmpRefUploadDT", "refUploadDT", false, 2)
+		'Close Temp Data
+		f.Data.DataTable.Close("tmpRefUploadDT")
+	f.Intrinsic.Control.Next(v.Local.iCnt)	
+	'Save DT
+	f.Data.DataTable.AcceptChanges("refUploadDT")
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Data.DataTable.SaveToDB("refUploadDT", "con", "GCG_5786_REFDESIG", "PARENT_BOM*!*PART*!*REF_DESIG", 256, "PARENT_BOM@!@PARENT_BOM*!*PART@!@PART*!*REF_DESIG@!@REF_DESIG")
+	f.ODBC.Connection!con.Close
+	'Close DT
+	f.Data.DataTable.Close("refUploadDT")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.getReferenceDesignators.End
+
+Program.Sub.bomImportData.Start
+v.Local.sBomParent.Declare
+v.Local.iCnt.Declare
+v.Local.sSQL.Declare
+v.Local.sRetID.Declare
+v.Local.sRet.Declare
+
+'Bom Import Data.
+v.Local.sItemNo.Declare
+v.Local.sPartSource.Declare
+v.Local.sPartClass.Declare
+v.Local.sPartTYpe.Declare
+v.Local.sWorkcenter.Declare
+v.Local.sGssPart.Declare
+v.Local.sGssRev.Declare
+v.Local.sGssPartRev.Declare
+v.Local.sCustPart.Declare
+v.Local.sCustRev.Declare
+v.Local.sDescription.Declare
+v.Local.sPackage.Declare
+v.Local.sPinCount.Declare
+v.Local.sMSL.Declare
+v.Local.sQTY.Declare
+v.Local.sStockUM.Declare
+v.Local.sStock2PurchUM.Declare
+v.Local.sPurchUM.Declare
+v.Local.sRefDesg.Declare
+v.Local.sMFG.Declare
+v.Local.sMPN.Declare
+v.Local.sBin.Declare
+v.Local.sSTD.Declare
+v.Local.sMinOrder.Declare
+v.Local.sOrderMult.Declare
+v.Local.sLeadTime.Declare
+v.Local.sPartPackaging.Declare
+v.Local.sROHSVersion.Declare
+v.Local.sROHSExemptionApplies.Declare
+v.Local.sROHSExemptions.Declare
+v.Local.sReachContainsSVHC.Declare
+v.Local.sReachSVHCContainedCas.Declare
+v.Local.sReachSVHCLimitExceed.Declare
+v.Local.sReachSVHCLimitExceedCas.Declare
+v.Local.sReachSVHCListVersion.Declare
+v.Local.sCaProp65Status.Declare
+v.Local.sCaProp65Cas.Declare
+
+v.Local.sNCNR.Declare
+v.Local.fRun_Scrap.Declare
+v.Local.sCerts_Req.Declare
+v.Local.sInsp_Req.Declare
+v.Local.sSort_Code.Declare
+
+'Fields for Bom Xref
+v.Local.sCheckPart.Declare
+v.Local.iSeq.Declare
+v.Local.sSaveSeq.Declare
+v.Local.sPreferred.Declare
+
+'Cert Dates
+v.Local.dDateStart.Declare
+v.Local.dDateExp.Declare
+
+v.Local.sCust.Declare
+v.Local.bSelected.Declare
+v.Local.sFilter.Declare
+
+f.Intrinsic.Control.Try
+	'Get Bom Parent and Set Bom Parent
+	v.Local.sBomParent.Set(v.Screen.Form!txt_PartNumber.Text)
+	f.Data.DataTable.SetValue("libBomCompleteDT", -1, "bom_parent", v.Local.sBomParent.Trim)
+	
+	'Check if the BOM Exists.
+	f.ODBC.Connection!con.OpenCompanyConnection
+		f.Intrinsic.String.Build("Select BOM_PARENT from GCG_5786_BOMIMPORT where BOM_PARENT = '{0}'", v.Local.sBomParent.Trim, v.Local.sSQL)
+		f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRetID)
+	f.ODBC.Connection!con.Close
+	f.Intrinsic.Control.If(v.Local.sRetID.Trim, <>, "")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+
+	'Loop Through DT
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.libBomCompleteDT.RowCount--, 1)
+		v.Local.sCust.Set(v.Screen.Form!txt_Cust.Text)
+		v.Local.sItemNo.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).itemNo!FieldValTrim)
+		v.Local.sPartSource.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).partSource!FieldValTrim)
+		v.Local.sPartClass.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).partClass!FieldValTrim)
+		v.Local.sPartTYpe.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).partType!FieldValTrim)
+		v.Local.sWorkcenter.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).workCenter!FieldValTrim)
+		v.Local.sGssPart.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).gssPartNo!FieldValTrim)
+		v.Local.sGssRev.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).gssRev!FieldValTrim)
+		v.Local.sCustPart.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).custPartNo!FieldValTrim)
+		v.Local.sCustRev.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).custRev!FieldValTrim)
+		v.Local.sDescription.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).description!FieldValTrim)
+		v.Local.sPackage.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).package!FieldValTrim)
+		v.Local.sPinCount.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).pinCount!FieldValTrim)
+		v.Local.sMSL.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).msl!FieldValTrim)
+		v.Local.sQTY.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).qty!FieldValTrim)
+		v.Local.sStockUM.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).invUM!FieldValTrim)
+		v.Local.sStock2PurchUM.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).i2pConversion!FieldValTrim)
+		v.Local.sPurchUM.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).purchUM!FieldValTrim)
+		v.Local.sRefDesg.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).refDesg!FieldValTrim)
+		v.Local.sMFG.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).mfg!FieldValTrim)
+		v.Local.sMPN.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).mpn!FieldValTrim)
+		v.Local.sBin.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).defaultBin!FieldValTrim)
+		v.Local.sSTD.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).stdCost!FieldValTrim)
+		v.Local.sMinOrder.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).minOrder!FieldValTrim)
+		v.Local.sOrderMult.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).multOrder!FieldValTrim)
+		v.Local.sLeadTime.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).leadTimes!FieldValTrim)
+		v.Local.sPartPackaging.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).partPackaging!FieldValTrim)
+		v.Local.sROHSVersion.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).rohsVer!FieldValTrim)
+		v.Local.sROHSExemptionApplies.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).rohsExceptionApplies!FieldValTrim)
+		v.Local.sROHSExemptions.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).rohsExceptions!FieldValTrim)
+		v.Local.sReachContainsSVHC.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).reachContainsSVHC!FieldValTrim)
+		v.Local.sReachSVHCContainedCas.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).reachContainedCAS!FieldValTrim)
+		v.Local.sReachSVHCLimitExceed.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).reachSVHClimitExceeded!FieldValTrim)
+		v.Local.sReachSVHCLimitExceedCas.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).reachSVHClimitExceededCAS!FieldValTrim)
+		v.Local.sReachSVHCListVersion.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).reachListVer!FieldValTrim)
+		v.Local.sCaProp65Status.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).cal65status!FieldValTrim)
+		v.Local.sCaProp65Cas.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).caProp65CAS!FieldValTrim)
+		
+		v.Local.sNCNR.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).NCNR!FieldValTrim)
+		v.Local.fRun_Scrap.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).RUN_SCRAP!FieldVal)
+		v.Local.sCerts_Req.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).cert_Req!FieldValTrim)
+		v.Local.sInsp_Req.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).INSP_REQ!FieldValTrim)
+		v.Local.sSort_Code.Set(v.DataTable.libBomCompleteDT(v.Local.iCnt).SORT_CODE!FieldValTrim)
+
+		'f.Intrinsic.String.Format(v.Local.sReachSVHCListVersion, "dd/mm/yyyy", v.Local.sReachSVHCListVersion)
+		'Create sql statement and insert.
+		f.ODBC.Connection!con.OpenCompanyConnection
+			f.Intrinsic.String.Build("Insert into  GCG_5786_BOMIMPORT (BOM_PARENT, ITEMNO, PART_SOURCE, PART_CLASS, PART_TYPE, WC, PART, REV, CUST_PART, CUST_REV, DESCRIPT, PACKAGE, PIN_COUNT, MSL, QTY, UM, PURCH_CONV_FACTOR, PURCH_UM, REF_DESG, MFG, MPN, BIN, STD_COST, MIN_ORDER_QTY, ORDER_MULTIPLE, LEAD_TIME, PART_PACKAGE, ROHS_VERSION, ROHSEXCEPTIONAPPLIES, ROHSEXCEPTIONS, REACHCONTAINSSVHC, REACHCONTAINEDCAS, REACHSVHCLIMITEXCEEDED, REACHSVHCLIMITEXCEEDEDCAS, REACHLISTVER, CAL65STATUS, CAPROP65CAS, NCNR, RUN_SCRAP, CERTS_REQ, INSP_REQ, SORT_CODE) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}', '{21}', '{22}', '{23}', '{24}', '{25}', '{26}', '{27}', '{28}', '{29}', '{30}', '{31}', '{32}', '{33}', '{34}', '{35}', '{36}', '{37}', '{38}', '{39}', '{40}', '{41}')", v.Local.sBomParent, v.Local.sItemNo,  v.Local.sPartSource, v.Local.sPartClass, v.Local.sPartTYpe, v.Local.sWorkcenter, v.Local.sGssPart, v.Local.sGssRev, v.Local.sCustPart, v.Local.sCustRev, v.Local.sDescription, v.Local.sPackage,  v.Local.sPinCount, v.Local.sMSL, v.Local.sQTY, v.Local.sStockUM, v.Local.sStock2PurchUM, v.Local.sPurchUM, v.Local.sRefDesg, v.Local.sMFG, v.Local.sMPN, v.Local.sBin, v.Local.sSTD, v.Local.sMinOrder, v.Local.sOrderMult, v.Local.sLeadTime, v.Local.sPartPackaging, v.Local.sROHSVersion, v.Local.sROHSExemptionApplies, v.Local.sROHSExemptions, v.Local.sReachContainsSVHC, v.Local.sReachSVHCContainedCas, v.Local.sReachSVHCLimitExceed, v.Local.sReachSVHCLimitExceedCas, v.Local.sReachSVHCListVersion, v.Local.sCaProp65Status, v.Local.sCaProp65Cas, v.Local.sNCNR, v.Local.fRun_Scrap, v.Local.sCerts_Req, v.Local.sInsp_Req, v.Local.sSort_Code, v.Local.sSQL)
+			f.ODBC.Connection!con.Execute(v.Local.sSQL)
+			
+			f.Intrinsic.String.Build("Insert into  GCG_5786_BOM_EDIT (BOM_PARENT, ITEMNO, PART_SOURCE, PART_CLASS, PART_TYPE, WC, PART, REV, CUST_PART, CUST_REV, DESCRIPT, PACKAGE, PIN_COUNT, MSL, QTY, UM, PURCH_CONV_FACTOR, PURCH_UM, REF_DESG, MFG, MPN, BIN, STD_COST, MIN_ORDER_QTY, ORDER_MULTIPLE, LEAD_TIME, PART_PACKAGE, ROHS_VERSION, ROHSEXCEPTIONAPPLIES, ROHSEXCEPTIONS, REACHCONTAINSSVHC, REACHCONTAINEDCAS, REACHSVHCLIMITEXCEEDED, REACHSVHCLIMITEXCEEDEDCAS, REACHLISTVER, CAL65STATUS, CAPROP65CAS, NCNR, RUN_SCRAP, CERTS_REQ, INSP_REQ, SORT_CODE, USERNAME, LAST_CHANGE) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}', '{21}', '{22}', '{23}', '{24}', '{25}', '{26}', '{27}', '{28}', '{29}', '{30}', '{31}', '{32}', '{33}', '{34}', '{35}', '{36}', '{37}', '{38}', '{39}', '{40}', '{41}', '{42}', '{43}')", v.Local.sBomParent, v.Local.sItemNo,  v.Local.sPartSource, v.Local.sPartClass, v.Local.sPartTYpe, v.Local.sWorkcenter, v.Local.sGssPart, v.Local.sGssRev, v.Local.sCustPart, v.Local.sCustRev, v.Local.sDescription, v.Local.sPackage,  v.Local.sPinCount, v.Local.sMSL, v.Local.sQTY, v.Local.sStockUM, v.Local.sStock2PurchUM, v.Local.sPurchUM, v.Local.sRefDesg, v.Local.sMFG, v.Local.sMPN, v.Local.sBin, v.Local.sSTD, v.Local.sMinOrder, v.Local.sOrderMult, v.Local.sLeadTime, v.Local.sPartPackaging, v.Local.sROHSVersion, v.Local.sROHSExemptionApplies, v.Local.sROHSExemptions, v.Local.sReachContainsSVHC, v.Local.sReachSVHCContainedCas, v.Local.sReachSVHCLimitExceed, v.Local.sReachSVHCLimitExceedCas, v.Local.sReachSVHCListVersion, v.Local.sCaProp65Status, v.Local.sCaProp65Cas, v.Local.sNCNR, v.Local.fRun_Scrap, v.Local.sCerts_Req, v.Local.sInsp_Req, v.Local.sSort_Code,v.Caller.User, v.Ambient.Date.PSQLFriendly, v.Local.sSQL)
+			f.ODBC.Connection!con.Execute(v.Local.sSQL)
+		f.ODBC.Connection!con.Close
+		
+		f.Intrinsic.String.Build("{0}{1}", v.Local.sGssPart, v.Local.sGssRev, v.Local.sGssPartRev)
+		'Check if the line's gsspartno is the same as the previous line.
+		f.Intrinsic.Control.If(v.Local.sCheckPart.Trim, =, v.Local.sGssPartRev)
+			'if so it's not the first AML for that part, therefore it's not preferred and sequence needs to be increased.
+			v.Local.sPreferred.Set("")
+			f.Intrinsic.String.LPad(v.Local.iSeq.++, "0", 4, v.Local.sSaveSeq)
+		f.Intrinsic.Control.Else
+			'If it is not the same, it is the first AML for that part. Therefore it is preferred and sequence needs to be restarted to 1. (0 +1)
+			v.Local.iSeq.Set(0)
+			v.Local.sPreferred.Set("Y")
+			v.Local.sCheckPart.Set(v.Local.sGssPartRev)
+			f.Intrinsic.String.LPad(v.Local.iSeq.++, "0", 4, v.Local.sSaveSeq)
+		f.Intrinsic.Control.EndIf	
+		
+		'Check if selected
+		f.Intrinsic.String.Build("ItemNo = '{0}' and MPN = '{1}' and MFG = '{2}'", v.Local.sItemNo, v.Local.sMPN, v.Local.sMFG, v.Local.sFilter)
+		f.Data.DataView.Create("displayDT$lineBomDT", "lineSelectedBomDV", 22)
+		f.Data.DataView.SetFilter("displayDT", "lineSelectedBomDV", v.Local.sFilter)
+		f.Intrinsic.Control.If(v.DataView.displayDT!LineSelectedBomDV.RowCount, =, 1)
+			'v.Local.sFilter.Set(v.DataView.displayDT!LineSelectedBomDV(0).select2Upload!FieldVal)
+			v.Local.bSelected.Set(v.DataView.displayDT$lineBomDT!LineSelectedBomDV(0).select2Upload!FieldVal)
+			
+			f.Intrinsic.Control.If(v.Local.bSelected)
+				f.ODBC.Connection!con.OpenCompanyConnection
+					f.Intrinsic.String.Build("Insert into  BOM_XREF (Parent, Part, SEQ, MFG_PART, MFG_NAME) Values ('{0}', '{1}', '{2}', '{3}', '{4}')", v.Local.sBomParent, v.Local.sGssPart, v.Local.sSaveSeq, v.Local.sMPN, v.Local.sMFG, v.Local.sPreferred, v.Local.sSQL)
+				f.ODBC.Connection!con.Execute(v.Local.sSQL)
+		f.ODBC.Connection!con.Close
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+		f.Data.DataView.Close("displayDT$lineBomDT", "lineSelectedBomDV")
+		
+		
+		'Check Key Values don't exist in DB.
+		f.ODBC.Connection!con.OpenCompanyConnection
+			f.Intrinsic.String.Build("Select * from GCG_5731_CERT_VALUES where PART = '{0}' AND MFG = '{1}' AND MPN = '{2}' AND CUSTOMER = '{3}' AND CUST_PART = '{4}'", v.Local.sGssPart, v.Local.sMfg, v.Local.sMpn, v.Local.sCust, v.Local.sCustPart, v.Local.sSQL)
+			f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+			'f.Data.Datatable.CreateFromSQL("certDate", "con", "Select * from GCG_5731_PART_CERTS where certName = 'ROHAS'")
+		f.ODBC.Connection!con.Close
+		
+		f.Intrinsic.Control.If(v.Local.sRet.Trim, =, "")
+			f.ODBC.Connection!con.OpenCompanyConnection
+				'Add ROHS
+				f.ODBC.Connection!con.ExecuteAndReturn("Select StartDate from GCG_5731_PART_CERTS where certName = 'ROHS' and Valid = 'Y'", v.Local.dDateStart)
+				f.ODBC.Connection!con.ExecuteAndReturn("Select ExpDate from GCG_5731_PART_CERTS where certName = 'ROHS' and Valid = 'Y'", v.Local.dDateExp)
+				
+				f.Intrinsic.String.Build("Insert into  GCG_5731_CERT_VALUES (BOM_PARENT, Part, MFG, MPN, Customer, Cust_Part, Cert, DateStart, DateExp, C_User1, C_User1_V, C_User2, C_User2_V, C_User3, C_User3_V, C_User4, C_User4_V, C_User5, C_User5_V, C_User6, C_User6_V) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}')", v.Local.sBomParent, v.Local.sGssPart, v.Local.sMFG, v.Local.sMPN, v.Local.sCust, v.Local.sCustPart, "ROHS", v.Local.dDateStart.PervasiveDate, v.Local.dDateExp.PervasiveDate, "ROHS_VERSION", v.Local.sROHSVersion, "ROHS_EXEMPTION_APPLIES", v.Local.sROHSExemptionApplies, "ROHS_EXEMPTIONS", v.Local.sROHSExemptions, " ", " ", " " , " ", " ", " ", v.Local.sSQL)
+				f.ODBC.Connection!con.Execute(v.Local.sSQL)
+				
+				'Add REACH
+				f.ODBC.Connection!con.ExecuteAndReturn("Select StartDate from GCG_5731_PART_CERTS where certName = 'REACH' and Valid = 'Y'", v.Local.dDateStart)
+				f.ODBC.Connection!con.ExecuteAndReturn("Select ExpDate from GCG_5731_PART_CERTS where certName = 'REACH' and Valid = 'Y'", v.Local.dDateExp)
+				
+				f.Intrinsic.String.Build("Insert into  GCG_5731_CERT_VALUES (BOM_PARENT, Part, MFG, MPN, Customer, Cust_Part, Cert, DateStart, DateExp, C_User1, C_User1_V, C_User2, C_User2_V, C_User3, C_User3_V, C_User4, C_User4_V, C_User5, C_User5_V, C_User6, C_User6_V) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}')", v.Local.sBomParent, v.Local.sGssPart, v.Local.sMFG, v.Local.sMPN, v.Local.sCust, v.Local.sCustPart, "REACH", v.Local.dDateStart.PervasiveDate, v.Local.dDateExp.PervasiveDate, "CONTAINS_SVHC", v.Local.sReachContainsSVHC, "SVHC_CONTAINED", v.Local.sReachSVHCContainedCas, "SVHC_LIMIT_EXCEEDED", v.Local.sReachSVHCLimitExceed, "SVHC_LIMIT_EXCEEDED_CAS", v.Local.sReachSVHCLimitExceedCas, "LIST_VERSION", v.Local.sReachSVHCListVersion, " ", " ",v.Local.sSQL)
+				f.ODBC.Connection!con.Execute(v.Local.sSQL)
+				
+				'Add CA_PROP_65
+				f.ODBC.Connection!con.ExecuteAndReturn("Select StartDate from GCG_5731_PART_CERTS where certName = 'CA_PROP_65' and Valid = 'Y'", v.Local.dDateStart)
+				f.ODBC.Connection!con.ExecuteAndReturn("Select ExpDate from GCG_5731_PART_CERTS where certName = 'CA_PROP_65' and Valid = 'Y'", v.Local.dDateExp)
+				
+				f.Intrinsic.String.Build("Insert into  GCG_5731_CERT_VALUES (BOM_PARENT, Part, MFG, MPN, Customer, Cust_Part, Cert, DateStart, DateExp, C_User1, C_User1_V, C_User2, C_User2_V, C_User3, C_User3_V, C_User4, C_User4_V, C_User5, C_User5_V, C_User6, C_User6_V) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}', '{19}', '{20}')", v.Local.sBomParent, v.Local.sGssPart, v.Local.sMFG, v.Local.sMPN, v.Local.sCust, v.Local.sCustPart, "CA_PROP_65", v.Local.dDateStart.PervasiveDate, v.Local.dDateExp.PervasiveDate, "STATUS", v.Local.sCaProp65Status, "CAS", v.Local.sCaProp65Cas, " ", " ", " " , " ", " ", " ", " ", " ", v.Local.sSQL)
+				f.ODBC.Connection!con.Execute(v.Local.sSQL)
+			f.ODBC.Connection!con.Close
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.bomImportData.End
+
+Program.Sub.cmdCustBrw_Click.Start
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+	f.Intrinsic.UI.Browser(205, "", v.Local.sRet)
+	f.Intrinsic.Control.If(v.Local.sRet.Trim, <>, "***CANCEL***")
+		f.Intrinsic.String.Split(v.Local.sRet, "*!*", v.Local.sRet)
+		gui.Form.txt_Cust.Text(v.Local.sRet(0))
+		gui.Form.txt_CustName.Text(v.Local.sRet(1))
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdCustBrw_Click.End
+
+Program.Sub.checkAML.Start
+v.Local.iCnt.Declare
+v.Local.sSQL.Declare
+v.Local.sMPN.Declare
+v.Local.sMFG.Declare
+v.Local.sRet.Declare
+
+f.Intrinsic.Control.Try
+
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT$LINEBOMDT.RowCount--, 1)
+		v.Local.sMFG.Set(v.DataTable.displayDT$LINEBOMDT(v.Local.iCnt).MFG!FieldValTrim)
+		v.Local.sMPN.Set(v.DataTable.displayDT$LINEBOMDT(v.Local.iCnt).MPN!FieldValTrim)
+		
+		f.ODBC.Connection!con.OpenCompanyConnection
+			f.Intrinsic.String.Build("Select * from INV_CROSS_REF where mfg_part = '{0}' and mfg_name = '{1}'", v.Local.sMPN.Trim, v.Local.sMFG.Trim, v.Local.sSQL)
+			f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+		f.ODBC.Connection!con.Close
+		'Check if exists.
+		f.Intrinsic.Control.If(v.Local.sRet.Trim, =, "")
+			f.Data.Datatable.SetValue("displayDT$LINEBOMDT", v.Local.iCnt, "AMLNEW", "NEW")
+		f.Intrinsic.Control.Else
+			f.Data.Datatable.SetValue("displayDT$LINEBOMDT", v.Local.iCnt, "AMLNEW", "EXISTING")
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.checkAML.End
+
+Program.Sub.cmdMFGbrw_Click.Start
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+	f.ODBC.Connection!con.OpenCompanyConnection
+	 	f.Intrinsic.UI.Browser("Manufacturer", "con", "Select * From GCG_5786_MFG", "MFG_CODE*!*MFG_NAME", "100*!*300", v.Local.sRet)
+	f.ODBC.Connection!con.Close
+	f.Intrinsic.Control.If(v.Local.sRet.Trim, <>, "***CANCEL***")
+		f.Intrinsic.String.Split(v.Local.sRet, "*!*", v.Local.sRet)
+		gui.Form.txt_Mfg.Text(v.Local.sRet(0))
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdMFGbrw_Click.End
+
+Program.Sub.checkMfg.Start
+v.Local.iCnt.Declare
+v.Local.iItemNo.Declare
+v.Local.sMFG.Declare
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+f.Intrinsic.Control.Try
+
+	f.Data.Dictionary.Create("displayMFG")
+	f.Data.Dictionary.Create("lineBomMFG")
+	
+	f.Intrinsic.Control.For(v.Local.iCnt, 0, v.DataTable.displayDT$lineBomDT.RowCount--, 1)
+		v.Local.iItemNo.Set(v.DataTable.displayDT$lineBomDT(v.Local.iCnt).ItemNo!FieldVal)
+		v.Local.sMFG.Set(v.DataTable.displayDT$lineBomDT(v.Local.iCnt).mfg!FieldVal)
+		
+		f.Intrinsic.String.Build("Select MFG_Code from GCG_5786_MFG where MFG_CODE = '{0}'", v.Local.sMFG, v.Local.sSQL)
+		f.ODBC.Connection!con.OpenCompanyConnection
+			f.ODBC.Connection!con.ExecuteAndReturn(v.Local.sSQL, v.Local.sRet)
+		f.ODBC.Connection!con.Close
+		
+		f.Intrinsic.Control.If(v.Local.sRet.Trim, =, "")
+			f.Data.Dictionary.AddItem("displayMFG", v.Local.iItemNo, 1)
+			f.Data.Dictionary.AddItem("lineBomMFG", v.Local.sMFG, 1)
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	f.Data.Dictionary.SetDefaultReturn("displayMFG", 0)
+	f.Data.Datatable.FillFromDictionary("displayDT", "displayMFG", "itemNo", "mfgDisplayCheck")
+	f.Data.Dictionary.Close("displayMFG")
+	
+	f.Data.Dictionary.SetDefaultReturn("lineBomMFG", 0)
+	f.Data.Datatable.FillFromDictionary("displayDT$lineBomDT", "lineBomMFG", "mfg", "mfgChildCheck")
+	f.Data.Dictionary.Close("lineBomMFG")
+	
+	f.Data.Datatable.AcceptChanges("displayDT")
+	f.Data.Datatable.AcceptChanges("displayDT$lineBomDT")
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.checkMfg.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$aanazco$}$20200309163550134$}$7aQAV3Tor/tR9bkuakHbuzQlHVuXCGOzKfzv6dmZ7Y9+jCIAbP03uiG6aiw1N1QvR8AM7wl/vW0=
+Program.Sub.Comments.End
