@@ -1,0 +1,16 @@
+-- Database: GLOBALCIG Metadata version: 2 Exported: Mar 9, 2020
+-- Begin Tables
+SET LEGACYTYPESALLOWED = ON;
+-- Begin Multi-Line Statement
+CREATE TABLE "GCG_5786_CUST_XREF" USING 'GCG_5786_CUST_XREF.mkd' PAGESIZE=4096 (
+ "PART" CHAR(20) NOT NULL,
+ "C_ID" CHAR(6) NOT NULL,
+ "C_PART" CHAR(100) NOT NULL,
+ "C_REV" CHAR(50),
+ "C_DESCRIPTION" CHAR(200),
+ "C_ACTIVE" BIT NOT NULL,
+ "C_USER" CHAR(9),
+ "C_DATE" DATE );
+-- End Multi-Line Statement
+SET LEGACYTYPESALLOWED = OFF;
+-- End Tables
