@@ -1,0 +1,14 @@
+-- Database: GLOBALCIG Metadata version: 2 Exported: Mar 9, 2020
+-- Begin Tables
+SET LEGACYTYPESALLOWED = ON;
+-- Begin Multi-Line Statement
+CREATE TABLE "GCG_5786_C_XREF_LOG" USING 'GCG_5786_C_XREF_LOG.mkd' PAGESIZE=4096 (
+ "C_ID" CHAR(6),
+ "C_PART" CHAR(100),
+ "C_REV" CHAR(50),
+ "ACTION_DESC" CHAR(6),
+ "ACTION_DATETIME" CHAR(30),
+ "ACTION_USER" CHAR(9) );
+-- End Multi-Line Statement
+SET LEGACYTYPESALLOWED = OFF;
+-- End Tables
